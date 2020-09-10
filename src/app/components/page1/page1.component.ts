@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import store from '../../stores/clicks.store';
+
+import {AlertService} from '../../services/alert.service';
+
 @Component({
   selector: 'app-page1',
   templateUrl: './page1.component.html',
@@ -7,9 +11,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Page1Component implements OnInit {
 
-  constructor() { }
+  state$$ = store.state;
+
+  oneTimeValue: number;
+
+  constructor(private alertService: AlertService) { }
 
   ngOnInit(): void {
+    const sub = store.onChange('count', (value) => {
+      this.oneTimeValue = value;
+
+      sub();
+    });
+  }
+
+  inc(): void {
+    store.state.count++;
+  }
+
+  show(): void {
+    this.alertService.show();
+  }
+
+  reset(): void {
+    store.reset();
   }
 
 }

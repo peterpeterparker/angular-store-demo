@@ -1,1 +1,19 @@
-<p>page1 works!</p>
+<header>
+  Page 1
+</header>
+
+<main>
+  <section>
+    Counts: {{state$$.count}}
+
+    Clicks: {{state$$.clicks}}
+
+    One time value: {{oneTimeValue}}
+  </section>
+
+  <section>
+    <button (click)="inc()">Increment</button>
+    <button (click)="show()">Show</button>
+    <button (click)="reset()">Reset</button>
+  </section>
+</main>

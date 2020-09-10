@@ -1,27 +1,18 @@
-# AngularStoreDemo
+# Angular Store Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
+Experiment the possibility to use a simple state management in Angular apps without absolutely any RxJs dependencies.
 
-## Development server
+To validate this hypothesis, a tweaked version of the [Stencil Store](https://github.com/peterpeterparker/stencil-store) was  used.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Table of contents
 
-## Code scaffolding
+- [Blog Post](#blog-post)
+- [Questions and observations](#questions-and-observations)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Blog Post
 
-## Build
+Angular: A Simple State Management Without RxJS (An Experiment) - TODO
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Questions and observations
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Reach me out on [Twitter](https://twitter.com/daviddalbusco).

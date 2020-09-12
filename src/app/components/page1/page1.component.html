@@ -4,16 +4,16 @@
 
 <main>
   <section>
-    <p>Counts: {{state$$.count}}</p>
-
     <p>Clicks: {{state$$.clicks}}</p>
+
+    <p>Count: {{state$$.count}}</p>
 
     <p>One time value: {{oneTimeValue}}</p>
   </section>
 
   <section>
-    <button (click)="inc()">Increment</button>
-    <button (click)="show()">Show</button>
+    <button (click)="inc()">Click</button>
+    <button (click)="show()">Service</button>
     <button (click)="reset()">Reset</button>
   </section>
 </main>

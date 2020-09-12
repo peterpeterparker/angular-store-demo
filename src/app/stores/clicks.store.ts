@@ -1,12 +1,12 @@
 import {createStore} from '@stencil/store';
 
 const { state, onChange, reset, dispose } = createStore({
-    count: 0,
-    clicks: 0
+    clicks: 0,
+    count: 0
 });
 
-onChange('count', value => {
-    state.clicks = value ** 2;
+onChange('clicks', value => {
+    state.count = value ** 2;
 });
 
 export default {state, onChange, reset, dispose};

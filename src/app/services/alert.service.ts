@@ -8,6 +8,6 @@ import store from '../stores/clicks.store';
 export class AlertService {
 
   show(): void {
-    alert(`Clicks: ${store.state.clicks}`);
+    alert(`Count: ${store.state.count}`);
   }
 }

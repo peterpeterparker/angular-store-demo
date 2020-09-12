@@ -18,7 +18,7 @@ export class Page1Component implements OnInit {
   constructor(private alertService: AlertService) { }
 
   ngOnInit(): void {
-    const sub = store.onChange('count', (value) => {
+    const sub = store.onChange('clicks', (value) => {
       this.oneTimeValue = value;
 
       sub();
@@ -26,7 +26,7 @@ export class Page1Component implements OnInit {
   }
 
   inc(): void {
-    store.state.count++;
+    store.state.clicks++;
   }
 
   show(): void {

@@ -36,6 +36,6 @@ describe('Page1Component', () => {
 
     const paragraph = fixture.nativeElement.querySelector('p:first-of-type');
 
-    expect(paragraph.textContent).toEqual('Counts: 1');
+    expect(paragraph.textContent).toEqual('Clicks: 1');
   });
 });

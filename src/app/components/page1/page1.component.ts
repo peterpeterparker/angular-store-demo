@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 
 import store from '../../stores/clicks.store';
 
@@ -7,7 +7,8 @@ import {AlertService} from '../../services/alert.service';
 @Component({
   selector: 'app-page1',
   templateUrl: './page1.component.html',
-  styleUrls: ['./page1.component.css']
+  styleUrls: ['./page1.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Page1Component implements OnInit {
 
@@ -15,7 +16,7 @@ export class Page1Component implements OnInit {
 
   oneTimeValue: number;
 
-  constructor(private alertService: AlertService) { }
+  constructor() { }
 
   ngOnInit(): void {
     const sub = store.onChange('clicks', (value) => {
@@ -27,14 +28,6 @@ export class Page1Component implements OnInit {
 
   inc(): void {
     store.state.clicks++;
-  }
-
-  show(): void {
-    this.alertService.show();
-  }
-
-  reset(): void {
-    store.reset();
   }
 
 }

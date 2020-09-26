@@ -8,7 +8,5 @@ import store from '../../stores/clicks.store';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-
-  state$$ = store.state;
-
+  state$$ = store;
 }

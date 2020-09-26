@@ -10,9 +10,8 @@ describe('Page1Component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Page1Component ]
-    })
-    .compileComponents();
+      declarations: [Page1Component]
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -22,7 +21,7 @@ describe('Page1Component', () => {
   });
 
   beforeEach(() => {
-    store.dispose();
+    // store.dispose();
   });
 
   it('should create', () => {

@@ -6,8 +6,7 @@ import store from '../stores/clicks.store';
   providedIn: 'root'
 })
 export class AlertService {
-
   show(): void {
-    alert(`Count: ${store.state.count}`);
+    alert(`Count: ${store.count}`);
   }
 }

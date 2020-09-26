@@ -11,7 +11,9 @@ To validate this hypothesis, a tweaked version of the [Stencil Store](https://gi
 
 ## Blog Post
 
-Angular: A Simple State Management Without RxJS (An Experiment) - TODO
+Angular: A Simple State Management Without RxJS (An Experiment)
+
+[Medium](https://medium.com/swlh/angular-state-management-without-rxjs-an-experiment-243de024d396) - [Dev](https://dev.to/daviddalbusco/angular-state-management-without-rxjs-an-experiment-3o0j) - [My website](https://daviddalbusco.com/blog/angular-state-management-without-rxjs-an-experiment)
 
 ## Questions and observations
 
